@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director Panel</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic styling for director panel layout */
+        .director-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .director-section {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .director-section h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Director Panel</h1>
+            <nav>
+                <a href="/new/dashboard">Dashboard</a>
+                <a href="/new/employee">Employee Management</a>
+                <a href="/new/payroll">Payroll Management</a>
+                <a href="/new/training">Training Management</a>
+                <a href="/new/attendance">Attendance Management</a>
+                <a href="/new/reports">Reports</a>
+                <!-- Add more navigation links as needed -->
+            </nav>
+        </header>
+
+        <!-- Performance Overview -->
+        <section class="director-section">
+            <h2>Performance Overview</h2>
+            <!-- Add performance overview content here -->
+        </section>
+
+        <!-- Financial Reports -->
+        <section class="director-section">
+            <h2>Financial Reports</h2>
+            <form action="/generate-report" method="POST">
+                <label for="report-type">Report Type:</label>
+                <select id="report-type" name="report-type" required>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+                
+                <button type="submit">Generate Report</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
