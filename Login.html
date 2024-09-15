@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background: linear-gradient(to right, #FFDEE9, #B5FFFC); height: 100vh; display: flex; justify-content: center; align-items: center;">
 
@@ -19,15 +21,29 @@
             <input type="password" id="password" name="password" required 
                    style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;">
 
-            <button type="submit" 
-                    style="width: 100%; padding: 10px; background: #36D1DC; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-                Login
+             <button type="submit" class="login" onclick="Dashboard.html()"
+                   style="width: 100%; padding: 10px; background: #36D1DC; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                     Login
             </button>
         </form>
 
         <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">
             Don't have an account? <a href="Registration.html" style="color: #36D1DC; text-decoration: none;">Register here</a>
         </p>
+        <div class="social-login">
+            <button class="google" onclick="onGoogleLogin()">
+                <i class="fab fa-google"></i> 
+            </button>
+
+            <button class="facebook" onclick="onFacebookLogin()">
+                <i class="fab fa-facebook-f"></i> 
+            </button>
+
+            <button class="linkedin" onclick="onLinkedInLogin()">
+                <i class="fab fa-linkedin"></i> 
+            </button>
+        </div>
+
     </div>
 
 </body>
