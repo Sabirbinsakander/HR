@@ -17,11 +17,32 @@
             z-index: 100;
             border-radius: 10px 10px 0px 0px;
         }
+        header h1 {
+            display: inline-block;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+            transition: background-color 0.3s ease;
+        }
         /* Basic styling for director panel layout */
         .director-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            max-width: 900px;
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            background: #fff;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
         .director-section {
             margin: 20px 0;
@@ -29,7 +50,12 @@
             max-width: 1200px;
         }
         .director-section h2 {
-            margin-top: 0;
+            font-size: 22px;
+            color: #2C3E50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -38,12 +64,16 @@
         <header>
             <h1>Director Panel</h1>
             <nav>
-                <a href="/dashboard">Dashboard</a>
-                <a href="/employee">Employee Management</a>
-                <a href="/payroll">Payroll Management</a>
-                <a href="/training">Training Management</a>
-                <a href="/attendance">Attendance Management</a>
-                <a href="/reports">Reports</a>
+                <a href="/Dashboard.html">Dashboard</a>
+                <a href="/employee.html">Employee Management</a>
+                <a href="/Payroll Module.html">Payroll Management</a>
+                <a href="/Training Module.html">Training Management</a>
+                <a href="/Attendance Module.html">Attendance Management</a>
+                <a href="/Notification Module.html">Notifications</a>
+                <a href="/Supervision Panel.html">Supervision</a>
+                <a href="/Director Panel.html">Director Panel</a>
+                <a href="/Calendar Module.html">Calender</a>
+                <a href="/Resource allocation.html">Resource-allocations</a>
                 <!-- Add more navigation links as needed -->
             </nav>
         </header>

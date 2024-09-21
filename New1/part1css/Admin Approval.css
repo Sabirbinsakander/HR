@@ -1,0 +1,57 @@
+/* Admin Approval Table */
+.admin-approval {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-approval h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .admin-approval table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-approval table thead th {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .admin-approval table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-approval button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .admin-approval button:hover {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .admin-approval button:first-child {
+    background-color: #2ecc71;
+    margin-right: 10px;
+  }
+  
+  .admin-approval button:last-child {
+    background-color: #e74c3c;
+  }
+  
